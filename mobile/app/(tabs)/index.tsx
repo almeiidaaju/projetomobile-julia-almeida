@@ -9,10 +9,10 @@ import React from 'react';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#820AD1', dark: '#820AD1' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
+          source={require('@/assets/images/nubank-logo-2.png')}
           style={styles.reactLogo}
         />
       }>
@@ -27,37 +27,36 @@ export default function HomeScreen() {
           onPress={() => {
             console.log('You tapped the button!');
           }}
-          title="TRANSFERIR"
+          title="TRANSFERIR" color="#6A00B8"
         />
           <Button
             onPress={() => {
               console.log('You tapped the button!');
             }}
-            title="area pix"
+            title="area pix" color="#6A00B8"
           />
          
           <Button
             onPress={() => {
               console.log('You tapped the button!');
             }}
-            title="PAGAR"
+            title="PAGAR" color="#6A00B8"
+
           />
         </ThemedView>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle"></ThemedText>
         <Button
           onPress={() => {
             console.log('You tapped the button!');
           }}
-          title="MEUS CARTÕES"
+          title="MEUS CARTÕES" color="#6A00B8"
+        
         />
-        <ThemedText>
-          gostando do aplicativo?
-          avalie na Play Store
-        </ThemedText>
+
+          
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
+      <ThemedView style={styles.cartao}>
         <ThemedText type="subtitle">cartão de crédito</ThemedText>
         <ThemedText>
         fatura atual
@@ -76,7 +75,10 @@ const styles = StyleSheet.create({
   },
   stepContainer: {
     gap: 8,
-    marginBottom: 8,
+    width: 100,
+     alignItems: 'center',
+      
+
   },
   reactLogo: {
     height: 178,
@@ -88,6 +90,12 @@ const styles = StyleSheet.create({
   botoes:{
     display:"flex",
     gap:"10px",
-    
-  }
+    width: 100,
+    flexDirection: 'row',
+
+  },
+  cartao:{}
 });
+  
+
+  
