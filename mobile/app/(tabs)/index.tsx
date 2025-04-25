@@ -21,42 +21,48 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">755,20</ThemedText>
-        <ThemedText> 
-        <Button
-        onPress={() => {
-         console.log('You tapped the button!');
-        }}
-        title="area pix"
-/>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12'
-            })}
-          </ThemedText>{' '}
-          Meus Cartões
-        </ThemedText>
+        <ThemedText type="subtitle">1.356.00</ThemedText>
+        <ThemedView style={styles.botoes}> 
+          <Button
+          onPress={() => {
+            console.log('You tapped the button!');
+          }}
+          title="TRANSFERIR"
+        />
+          <Button
+            onPress={() => {
+              console.log('You tapped the button!');
+            }}
+            title="area pix"
+          />
+         
+          <Button
+            onPress={() => {
+              console.log('You tapped the button!');
+            }}
+            title="PAGAR"
+          />
+        </ThemedView>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Meus Cartões</ThemedText>
+        <ThemedText type="subtitle"></ThemedText>
+        <Button
+          onPress={() => {
+            console.log('You tapped the button!');
+          }}
+          title="MEUS CARTÕES"
+        />
         <ThemedText>
-          gostando do aplicativo? 
+          gostando do aplicativo?
           avalie na Play Store
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">cartão de crédito</ThemedText>
         <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+        fatura atual
         </ThemedText>
+        1.098.00
       </ThemedView>
     </ParallaxScrollView>
   );
@@ -79,4 +85,9 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
+  botoes:{
+    display:"flex",
+    gap:"10px",
+    
+  }
 });
